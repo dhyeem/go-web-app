@@ -4,10 +4,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    {{if .FirstName}}
+    <title>{{.FirstName}}</title>
+    {{else}}
+    <title>{{.Title}}</title>
+    {{end}}
 
 </head>
-<link rel="stylesheet" herf="/public/css/main.css">
+<link rel="stylesheet" href="/public/css/main.css">
 <body>
 {{end}}
 

@@ -1,13 +1,16 @@
-{{templates "header"}}
+{{template "header" . }}
 
-<h1>APPLY</h1>
+<h1 name="Apply title">APPLY</h1>
 
 {{template "nav-main"}}
 
+    {{if .FirstName }}
+    Your Name is {{.FirstName}}
+    {{end}}
 
 <form action="/apply" method="post">
     <lable for="fnm">first name
-        <iput type="text" name="fname" id="fnm"></input>
+        <input type="text" name="fname" id="fnm">
     </lable>
     <input type="submit">
 </form>
