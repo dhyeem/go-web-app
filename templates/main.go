@@ -33,7 +33,7 @@ func idx(w http.ResponseWriter, req *http.Request) {
 	err := tpl.ExecuteTemplate(w, "index.gohtml", pd)
 	if err != nil {
 		log.Println("LOGG", err)
-		http.Error(w, "Internal Serverrrrr Error", http.StatusInternalServerError)
+		http.Error(w, "Internal Serverr Error", http.StatusInternalServerError)
 		return
 
 	}
